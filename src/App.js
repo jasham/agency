@@ -1,12 +1,13 @@
 import { ThemeProvider } from 'styled-components'
 
 import { BrowserRouter, Route } from 'react-router-dom'
-
+import Home from './screens/home';
+import theme  from './utility/theme'
 function App() {
   return (
-    <ThemeProvider >
+    <ThemeProvider theme={theme}>
       <BrowserRouter>
-        {/* <Route component={Kitchensink} exact path="/sink" /> */}
+        <Route component={Home} exact path="/" />
       </BrowserRouter>    
     </ThemeProvider>
   );
