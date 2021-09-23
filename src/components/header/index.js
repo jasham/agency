@@ -25,7 +25,7 @@ const Header = () => {
             </SubWrapper>
                     <Line />
             <SubWrapper>
-                {/* <LowerHeader /> */}
+                <LowerHeader />
             </SubWrapper>
         </MainWrapper>
 }
