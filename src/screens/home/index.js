@@ -3,6 +3,8 @@ import Header from '../../components/header'
 import FirstPage from './firstPage'
 import AboutUs from './aboutus'
 import ServicesPage from './services'
+import OurProject from './ourprojects'
+import Footer from './footer'
 
 const Home = () => {
     return <div>
@@ -15,6 +17,12 @@ const Home = () => {
         </div>
         <div style={{ marginBottom : 20}}>
             <ServicesPage />
+        </div>
+        <div style={{ marginBottom : 20}}>
+            <OurProject />
+        </div>
+        <div style={{ marginBottom : 20}}>
+            <Footer />
         </div>
     </div>
 }

@@ -6,7 +6,8 @@ const theme = {
     black : "#393939",
     slate : "#171717",
     white : "#ffffff",
-    darkshade : "rgba(0, 0, 0,0.9)"
+    darkshade : "rgba(0, 0, 0,0.9)",
+    darkshade2: "rgba(0, 0, 0,0.7)",
 };
 
 export default theme

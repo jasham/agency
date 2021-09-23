@@ -62,6 +62,12 @@ const SWCards = styled.div`
     justify-content : center;
     gap : 30px;
 `
+
+const FlexRow = styled.div`
+    display : flex;
+    flex-direction : row;
+`
+
 const ServicesPage = () => {
     return <MainWrapper>
         <MWShadow>
