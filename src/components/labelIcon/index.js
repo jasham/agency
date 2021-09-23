@@ -11,12 +11,13 @@ const StyledLabel = styled.div`
 `
 const LabelIcon = (props) => {
     return <StyledLabel>
-        {props.icon} &nbsp;
+
+        <span style={{ width : 25,}}>{props.icon} </span>&nbsp;
         <CText
             label={props.text}
             color={theme.white}
             ffamily={fontFamily("regular")}
-            fSize={fSize("regular")}
+            fsize={props.fsize ? props.fsize  : fSize("regular")}
         />
     </StyledLabel>
 }

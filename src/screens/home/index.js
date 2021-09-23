@@ -8,7 +8,7 @@ import Footer from './footer'
 
 const Home = () => {
     return <div>
-        {/* <Header /> */}
+        <Header />
         <div style={{ marginBottom : 20}}>
             <FirstPage />
         </div>
@@ -21,7 +21,7 @@ const Home = () => {
         <div style={{ marginBottom : 20}}>
             <OurProject />
         </div>
-        <div style={{ marginBottom : 20}}>
+        <div>
             <Footer />
         </div>
     </div>
