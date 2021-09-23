@@ -22,30 +22,27 @@ const MainWrapper = styled.div`
     justify-content : center;
     align-items : center;
     width : 100%;
-    background-color : ${theme.darkshade};
+    background-color : ${theme.black2};
     min-height : 200px;
     padding-bottom : 20px;
-    padding-top : 80px;
+    /* padding-top : 80px; */
     /* position : absolute; */
     width : 100%;
-    height: 100%;
     /* top : 100px; */
     /* bottom : 0; */
 `
 const SubWrapper = styled.div`
     width : 80%;
-    height : 100%;
     max-width : ${device.desktopL};
     display : flex;
     flex-direction : column;
     flex-wrap : wrap;
     justify-content : space-around;
     align-items : center;
-    /* background-color : red; */
 `
 
 const MainFooter = styled.div`
-    position : relative;
+    /* position : relative; */
     height : 100%;
     width : 100%;
     /* background-color : orange; */
@@ -54,7 +51,7 @@ const MainFooter = styled.div`
 const SubFooter = styled.div`
     height : 200px;
     width : 100%;
-    background-color : ${theme.gray2};
+    background-color : ${theme.white};
     display : flex;
     justify-content : center;
     align-items : center;
@@ -71,19 +68,45 @@ const Column = styled.div`
     width : ${props => props.width ? props.width : "23%"};
 `
 
+const MWrapper = styled.div`
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    width : 100%;
+    background-color : red;
+    min-height : 200px;
+    padding-bottom : 20px;
+    padding-top : 80px;
+    /* position : absolute; */
+    width : 100%;
+    height: 100%;
+    /* top : 100px; */
+    bottom : -40px;
+`
+const SWrapper = styled.div`
+    width : 80%;
+    height : 100%;
+    max-width : ${device.desktopL};
+    display : flex;
+    flex-direction : column;
+    flex-wrap : wrap;
+    justify-content : space-around;
+    align-items : center;
+`
 const WrapperContent = styled.div`
     position : relative;
-    background-color : red;
 `
 const Footer = () => {
     return <WrapperContent>
-        {/* <SubFooter>
-            <SubWrapper>
-
-            </SubWrapper>
-        </SubFooter> */}
+        
         <MainWrapper>
             <SubWrapper>
+                <div style={{ position : "absolute", width : "100%", height : 128, backgroundColor : theme.white, top : 0, left : 0 }}>
+
+                </div>
+                <div style={{  width : "100%", height : 200, backgroundColor : theme.slate, zIndex : 1000, marginBottom : 20, borderRadius : 20  }}>
+
+                </div>
                 <MainFooter>  
                     <Content>
                         <Column>
@@ -212,6 +235,7 @@ const Footer = () => {
                         </Column>
                     </Content>
                 </MainFooter>
+             
             </SubWrapper>
         </MainWrapper>
     </WrapperContent>
