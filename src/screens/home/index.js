@@ -6,7 +6,6 @@ import ServicesPage from './services'
 import OurProject from './ourprojects'
 import Footer from './footer'
 import Blogs from './blogs'
-import {ReactNavbar} from "react-responsive-animate-navbar";
 import styled from 'styled-components'
 import { device } from '../../utility/layout'
 import theme from '../../utility/theme'
