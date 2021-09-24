@@ -23,7 +23,7 @@ const SubWrapper = styled.div`
         flex-direction : column;
         width : 90%;
     }
-    @media ${device.laptop} { 
+    @media ${device.tablet} { 
         flex-direction : row;
         width : 80%;
     }
@@ -35,7 +35,7 @@ const LeftWrapper = styled.div`
     @media ${device.mobileS} { 
         width : 100%;
     };
-    @media ${device.laptop} { 
+    @media ${device.tablet} { 
         width : 48%;
     };
 `
@@ -53,7 +53,7 @@ const RightWrapper = styled.div`
     @media ${device.mobileS} { 
         width : 100%;
     };
-    @media ${device.laptop} { 
+    @media ${device.tablet} { 
         width : 100%;
     };
 `
@@ -61,7 +61,7 @@ const RMobWrapper = styled.div`
     @media ${device.mobileS} { 
         display : block;
     };
-    @media ${device.laptop} { 
+    @media ${device.tablet} { 
         display : none;
     };
 `
@@ -71,7 +71,7 @@ const RLapWrapper = styled.div`
     @media ${device.mobileS} { 
         display : none;
     };
-    @media ${device.laptop} { 
+    @media ${device.tablet} { 
         display : block;
     };
 `
