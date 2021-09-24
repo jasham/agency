@@ -16,6 +16,7 @@ import LabelIcon from '../../components/labelIcon'
 import PhoneIcon from '../../assets/icons/phone'
 import Mail from '../../assets/icons/mail'
 import Pin from '../../assets/icons/pin'
+import ButtonInput from '../../components/buttonInput'
 
 const MainWrapper = styled.div`
     display : flex;
@@ -96,17 +97,66 @@ const SWrapper = styled.div`
 const WrapperContent = styled.div`
     position : relative;
 `
+
+const SubWSub1 = styled.div`
+    position : absolute; 
+    width : 100%; 
+    height : 128px; 
+    background-color : ${theme.white};
+    top : 0px; 
+    left : 0px;
+`
+
+const SubWSub2 = styled.div`
+    width : calc(100% - 160px);
+    height : 200px;
+    background-color : ${theme.slate}; 
+    z-index : 1000;
+    margin-bottom : 20px;
+    border-radius : 20px;
+    display : flex;
+    flex-direction : row;
+    justify-content : space-between;
+    padding-left : 80px;
+    padding-right : 80px;
+    align-items : center;
+`
+
+const SWS1Left = styled.div`
+    display : flex;
+    flex-direction : column;
+`
+
 const Footer = () => {
     return <WrapperContent>
         
         <MainWrapper>
             <SubWrapper>
-                <div style={{ position : "absolute", width : "100%", height : 128, backgroundColor : theme.white, top : 0, left : 0 }}>
+                <SubWSub1 />
+                <SubWSub2>
+                    <SWS1Left>
+                        <CText 
+                            label="Need For Some Help ? "
+                            color={theme.maincolor}
+                            ffamily={fontFamily('regular')}
+                            fsize={fSize('small')}
+                        />
+                        <CText 
+                            label="LET'S CONTACT US "
+                            color={theme.white}
+                            ffamily={fontFamily('semiB')}
+                            fsize={fSize('20px')}
+                        />
+                        <CText 
+                            label="Service & Support Before the launch is the launch! "
+                            color={theme.gray1}
+                            ffamily={fontFamily('regular')}
+                            fsize={fSize('small')}
+                        />
+                    </SWS1Left>
 
-                </div>
-                <div style={{  width : "100%", height : 200, backgroundColor : theme.slate, zIndex : 1000, marginBottom : 20, borderRadius : 20  }}>
-
-                </div>
+                    <ButtonInput placeholder="Enter Email Address" />
+                </SubWSub2>
                 <MainFooter>  
                     <Content>
                         <Column>

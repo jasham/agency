@@ -49,8 +49,6 @@ const SubWrapper = styled.div`
     justify-content : space-around;
     align-items : center;
 `
-
-
 const TitleWrapper = styled.div`
     margin-bottom : 20px;
 `

@@ -5,6 +5,7 @@ import AboutUs from './aboutus'
 import ServicesPage from './services'
 import OurProject from './ourprojects'
 import Footer from './footer'
+import Blogs from './blogs'
 
 const Home = () => {
     return <div>
@@ -20,6 +21,9 @@ const Home = () => {
         </div>
         <div style={{ marginBottom : 20}}>
             <OurProject />
+        </div>
+        <div>
+            <Blogs />
         </div>
         <div>
             <Footer />

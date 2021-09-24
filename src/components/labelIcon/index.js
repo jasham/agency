@@ -15,7 +15,7 @@ const LabelIcon = (props) => {
         <span style={{ width : 25,}}>{props.icon} </span>&nbsp;
         <CText
             label={props.text}
-            color={theme.white}
+            color={props.color || theme.white}
             ffamily={fontFamily("regular")}
             fsize={props.fsize ? props.fsize  : fSize("regular")}
         />
