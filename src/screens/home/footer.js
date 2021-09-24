@@ -62,11 +62,35 @@ const Content = styled.div`
     display : flex;
     flex-direction : row;
     justify-content : space-between;
+    @media ${device.mobileS} { 
+        flex-direction : column;
+
+    };
+    @media ${device.mobileM} { 
+        flex-direction : column;
+
+    };
+    @media ${device.tablet} { 
+        flex-direction : row;
+    };
 `
 const Column = styled.div`
     display : flex;
     flex-direction : column;
     width : ${props => props.width ? props.width : "23%"};
+    @media ${device.mobileS} { 
+        width : 100%;
+        justify-content : center;
+        align-items : center;
+    };
+    @media ${device.mobileM} { 
+        width : 100%;
+        justify-content : center;
+        align-items : center;
+    };
+    @media ${device.tablet} { 
+        width : ${props => props.width ? props.width : "23%"};
+    };
 `
 
 const MWrapper = styled.div`
@@ -109,7 +133,7 @@ const SubWSub1 = styled.div`
 
 const SubWSub2 = styled.div`
     width : calc(100% - 160px);
-    height : 200px;
+    min-height : 200px;
     background-color : ${theme.slate}; 
     z-index : 1000;
     margin-bottom : 20px;
@@ -120,13 +144,38 @@ const SubWSub2 = styled.div`
     padding-left : 80px;
     padding-right : 80px;
     align-items : center;
+
+    @media ${device.mobileS} { 
+        flex-direction : column;
+        padding-bottom : 20px;
+        padding-top : 20px;
+        padding-left : 30px;
+        padding-right : 30px;
+        width : calc(100% - 60px);
+        min-height : fit-content;
+    };
+    @media ${device.mobileM} { 
+        flex-direction : column;
+        padding-bottom : 20px;
+        padding-top : 20px;
+        padding-left : 30px;
+        padding-right : 30px;
+        width : calc(100% - 60px);
+        min-height : fit-content;
+    };
+    @media ${device.tablet} { 
+        flex-direction : row;
+    };
 `
 
 const SWS1Left = styled.div`
     display : flex;
     flex-direction : column;
+    margin-bottom : 20px;
 `
-
+const ButtonWrapper = styled.div`
+    
+`
 const Footer = () => {
     return <WrapperContent>
         
@@ -154,8 +203,9 @@ const Footer = () => {
                             fsize={fSize('small')}
                         />
                     </SWS1Left>
-
-                    <ButtonInput placeholder="Enter Email Address" />
+                    <ButtonWrapper>
+                        <ButtonInput placeholder="Enter Email Address" />
+                    </ButtonWrapper>
                 </SubWSub2>
                 <MainFooter>  
                     <Content>

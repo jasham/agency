@@ -133,7 +133,7 @@ const Home = () => {
             <Header />
         </WebHeader>
         <div style={{ marginBottom : 20}}>
-        <FirstPage />
+            <FirstPage />
         </div>
         <div style={{ marginBottom : 20}}>
             <AboutUs />

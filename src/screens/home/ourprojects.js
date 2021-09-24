@@ -77,22 +77,35 @@ const ImgCard = styled.div`
 `
 const ImgWrapper = styled.div`
     display : flex;
-    flex : 1;
+    /* flex : 1; */
     background-image : url(${props => props.bgImg});
     background-repeat : no-repeat;
     background-size : cover;
     height : 358px;
     border-radius : 20px;
+    @media ${device.mobileS} { 
+        flex-direction : column;
+        width : 100%;
+    }
+    @media ${device.tablet} { 
+        flex-direction : row;
+        width : 68%;
+    }
 `
 const SubImageWrapper = styled.div`
     width : 70%;
 `
 const ImgRowOne = styled.div`
     display : flex;
-    flex-direction : row;
-    width : 100%;
+    width : calc(100% - 20px);
     gap : 20px;
     margin-bottom : 20px;
+    @media ${device.mobileS} { 
+        flex-direction : column;
+    }
+    @media ${device.tablet} { 
+        flex-direction : row;
+    }
 `
 const SubImageWrapperDes = styled.div`
     width : 100%;
@@ -106,7 +119,13 @@ const ImgRowTwo = styled.div`
     flex-direction : row;
     gap : 20px;
     margin-bottom : 20px;
-    width : 100%;
+    width : calc(100% - 20px);
+    @media ${device.mobileS} { 
+        flex-direction : column;
+    }
+    @media ${device.tablet} { 
+        flex-direction : row;
+    }
 `
 
 const WOCWrapper = styled.div`
@@ -116,13 +135,27 @@ const WOCWrapper = styled.div`
     border-radius : 20px;
     min-height : 350px;
     justify-content : center;
-    /* gap : 20px; */
-    /* padding-left : 20px;
-    padding-right : 20px; */
     width : 100%;
-    /* max-width : 80%; */
     padding-top : 20px;
     align-items : center;
+    @media ${device.mobileS} { 
+        flex-direction : column;
+        width : 100%;
+        padding-top : 60px;
+        padding-bottom : 60px;
+    }
+    @media ${device.tablet} { 
+        flex-direction : column;
+        width : 100%;
+        padding-top : 60px;
+        padding-bottom : 60px;
+    }
+    @media ${device.laptop} { 
+        flex-direction : row;
+        width : calc(100% - 70px);
+        padding-left : 30px;
+        padding-right : 30px;
+    }
 `
 const BlockOne = styled.div`
     display : flex;
@@ -147,6 +180,46 @@ const ImgWOCS = styled.div`
 
 const CusCarousel = styled(Carousel)`
     width : 100%;
+`
+
+const IMCardWrap1 = styled.div`
+    @media ${device.mobileS} { 
+        flex-direction : column;
+        width : 100%;
+    }
+    @media ${device.tablet} { 
+        flex-direction : row;
+        width : 32%;
+    }
+
+`
+
+const IMCardWrap2 = styled.div`
+    @media ${device.mobileS} { 
+        flex-direction : column;
+        width : 100%;
+    }
+    @media ${device.tablet} { 
+        flex-direction : row;
+        width : 32%;
+    }
+`
+
+const PM23 = styled.div`
+    height : fit-content;
+    @media ${device.mobileS} { 
+        width : 70%;
+        margin-bottom : 20px;
+    }
+    @media ${device.tablet} { 
+        width : 70%;
+    }
+`
+const PM235 = styled.div`
+    display : flex; 
+    align-items : center;
+    width:65%;
+    height : fit-content;
 `
 const OurProject = (props) => {
     return <MainWrapper>
@@ -175,31 +248,41 @@ const OurProject = (props) => {
             </DescWrapper>
             <ImageCards>
                 <ImgRowOne>
-                    <ImgCard 
-                        bgImg={Georgie}
-                        width="32%"
-                    />
+                    <IMCardWrap1>
+
+                        <ImgCard 
+                            bgImg={Georgie}
+                            width="100%"
+                        />
+                    </IMCardWrap1>
+                    
                     <ImgWrapper bgImg={Design} >
                         <SubImageWrapperDes />
                     </ImgWrapper>
                 </ImgRowOne>
                 <ImgRowTwo>
-                    <ImgCard 
-                        bgImg={Igor}
-                        width="32%"
-                    />
-                    <ImgCard 
-                        bgImg={Campign}
-                        width="32%"
-                    />
-                    <ImgCard 
-                        bgImg={Ilya}
-                        width="32%"
-                    />
+                    <IMCardWrap2>
+                        <ImgCard 
+                            bgImg={Igor}
+                            width="100%"
+                        />
+                    </IMCardWrap2>
+                    <IMCardWrap2>
+                        <ImgCard 
+                            bgImg={Campign}
+                            width="100%"
+                        />
+                    </IMCardWrap2>
+                    <IMCardWrap2>
+                        <ImgCard 
+                            bgImg={Ilya}
+                            width="100%"
+                        />
+                    </IMCardWrap2>
                 </ImgRowTwo>
             </ImageCards>
             <WOCWrapper>
-                <div style={{ width : "25%", height : "fit-content"}}>
+                <PM23>
                     <BlockOne>
                         <CText 
                             label="WHAT OUR "
@@ -220,8 +303,8 @@ const OurProject = (props) => {
                             color={theme.gray1}
                         />
                     </BlockOne>
-                </div>
-                <div style={{ display : "flex" , alignItems : "center", width:"65%", height : "fit-content" }}>
+                </PM23>
+                <PM235>
                     <CusCarousel  
                         responsive={responsive} 
                         showDots={true}
@@ -356,7 +439,7 @@ const OurProject = (props) => {
                             
                         </BlockTwo>
                     </CusCarousel>
-                </div>  
+                </PM235>  
             </WOCWrapper>
         
         </SubWrapper>

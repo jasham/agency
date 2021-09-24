@@ -38,10 +38,16 @@ const DescWrapper = styled.div`
 `
 const BCWrapper = styled.div`
     display : flex;
-    flex-direction : row;
     flex-wrap : wrap;
     width : 100%;
     gap : 20px;
+
+    @media ${device.mobileS} { 
+        flex-direction : column;
+    };
+    @media ${device.tablet} { 
+        flex-direction : row;
+    };
 `
 const Blogs = () => {
     return <MainWrapper>

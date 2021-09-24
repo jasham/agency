@@ -4,6 +4,7 @@ import CText from '../text'
 import { fontFamily, fSize } from '../../utility/font'
 import theme from '../../utility/theme'
 import LinkButton from '../linkButton'
+import { device } from '../../utility/layout'
 
 const MainWrapper = styled.div`
     border : 1px solid ${props => props.theme.maincolor};
@@ -19,7 +20,6 @@ const MainWrapper = styled.div`
         fill : ${props => props.theme.maincolor};
     }
     height : 300px;
-    width : 300px;
     /* opacity : 0.3; */
     padding-left : 15px;
     padding-right : 15px;
@@ -27,6 +27,19 @@ const MainWrapper = styled.div`
     align-items : center;
     display : flex;
     flex-direction : column;
+
+    @media ${device.mobileS} { 
+        width : 250px;
+    };
+    @media ${device.mobileM} { 
+        width : 250px;
+    };
+    @media ${device.mobileL} { 
+        width : 250px;
+    };
+    @media ${device.tablet} { 
+        width : 300px;
+    };
 `
 const ServiceCard = (props) => {
     return <MainWrapper>
