@@ -10,6 +10,8 @@ import PhoneIcon from '../../assets/icons/phone'
 import Mail from '../../assets/icons/mail'
 import Pin from '../../assets/icons/pin'
 import ButtonInput from '../../components/buttonInput'
+import Facebook from '../../assets/icons/facebook'
+import Instagram from '../../assets/icons/insta'
 
 const MainWrapper = styled.div`
     display : flex;
@@ -158,6 +160,11 @@ const SubWSub2 = styled.div`
     };
     @media ${device.tablet} { 
         flex-direction : row;
+        padding-left : 80px;
+        padding-right : 80px;
+        min-height : 200px;
+        width : calc(100% - 160px);
+
     };
 `
 
@@ -325,6 +332,12 @@ const Footer = () => {
                                 fsize={fSize('regular')}
                                 color={theme.white}
                             />
+                            <div style={{ marginBottom : 10, display : "flex", flexDirection : "row", }}>
+                                <span style={{ marginRight : 15}}>
+                                <Facebook />
+                                </span>
+                                <Instagram />
+                            </div>
                         </Column>
                     </Content>
                 </MainFooter>

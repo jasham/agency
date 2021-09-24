@@ -7,18 +7,22 @@ const Anchor = styled.a`
     text-decoration : none;
     cursor: hand;
     & :hover {
-        color : ${props => props.theme.maincolor};
+        color : ${props => props.hcolor ? props.hcolor : props.theme.maincolor};
     }
 `
 const LinkButton = (props) => {
-    return <Anchor href={props.href}>
-        <CText 
-            label={props.label}
-            ffamily={fontFamily('regular')}
-            fsize={fSize('small')}
-            color={props.color}
-        />
-    </Anchor>
+    return <Anchor 
+            href={props.href} 
+            hcolor={props.hcolor}
+        >
+            <CText 
+                label={props.label}
+                ffamily={fontFamily('regular')}
+                fsize={fSize('small')}
+                color={props.color}
+                className="anchor___color"
+            />
+        </Anchor>
 }
 
 export default LinkButton

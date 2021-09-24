@@ -16,6 +16,12 @@ const MainWrapper = styled.div`
     &:hover .my__unique {
         fill : white; 
     }
+    &:hover .anchor___color {
+        color : ${theme.white};
+    }
+    .anchor___color {
+        color : ${theme.maincolor};
+    }
     .my__unique {
         fill : ${props => props.theme.maincolor};
     }
@@ -66,7 +72,8 @@ const ServiceCard = (props) => {
         <LinkButton 
             label="Read More"
             href={props.href}
-            color={theme.white}
+            // color={theme.maincolor}
+            // hcolor={"white"}
         />
     </MainWrapper>
 }

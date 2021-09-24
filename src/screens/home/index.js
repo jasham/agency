@@ -17,6 +17,8 @@ import LabelIcon from '../../components/labelIcon'
 import Mail from '../../assets/icons/mail'
 import Pin from '../../assets/icons/pin'
 import PhoneIcon from '../../assets/icons/phone'
+import Facebook from '../../assets/icons/facebook'
+import Instagram from '../../assets/icons/insta'
 
 const MobHeader =styled.div`
     margin-bottom : 20px;
@@ -55,7 +57,7 @@ const WebHeader =styled.div`
 `
 
 const RespMob = styled.div`
-    height : ${props => props.height ? "350px" : '50px'};
+    height : ${props => props.height ? "380px" : '50px'};
     transition: all 0.3s ease-out;
     overflow : hidden;
 `
@@ -126,6 +128,13 @@ const Home = () => {
                         icon={<Pin />}
                         text="Germany"
                     />
+                </div>
+                <div style={{ paddingLeft : 60, marginBottom : 10, display : "flex", flexDirection : "row", }}>
+                    
+                    <span style={{ marginRight : 15}}>
+                    <Facebook />
+                    </span>
+                    <Instagram />
                 </div>
             </RespMob>
         </MobHeader>

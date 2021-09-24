@@ -15,6 +15,7 @@ const CText = (props) => {
         fweigth={props.fweigth}
         fsize={props.fsize}
         textAlign={props.textAlign}
+        className={props.className}
     >
         {props.label}
     </StyledText>
