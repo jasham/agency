@@ -4,8 +4,6 @@ import { device } from '../../utility/layout'
 import CText from '../../components/text'
 import { fontFamily, fSize } from '../../utility/font'
 import theme from '../../utility/theme'
-import Button from '../../components/button'
-import laptop from '../../assets/images/laptop.png'
 import Campign from '../../assets/images/campaign.png'
 import Georgie from '../../assets/images/georgie.png'
 import Igor from '../../assets/images/igor.png'
@@ -91,9 +89,6 @@ const ImgWrapper = styled.div`
         flex-direction : row;
         width : 68%;
     }
-`
-const SubImageWrapper = styled.div`
-    width : 70%;
 `
 const ImgRowOne = styled.div`
     display : flex;

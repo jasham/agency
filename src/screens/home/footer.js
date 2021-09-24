@@ -4,13 +4,6 @@ import { device } from '../../utility/layout'
 import CText from '../../components/text'
 import { fontFamily, fSize } from '../../utility/font'
 import theme from '../../utility/theme'
-import Button from '../../components/button'
-import laptop from '../../assets/images/laptop.png'
-import Campign from '../../assets/images/campaign.png'
-import Georgie from '../../assets/images/georgie.png'
-import Igor from '../../assets/images/igor.png'
-import Design from '../../assets/images/design.png'
-import Ilya from '../../assets/images/ilya.png'
 import LinkButton from '../../components/linkButton'
 import LabelIcon from '../../components/labelIcon'
 import PhoneIcon from '../../assets/icons/phone'
@@ -49,14 +42,14 @@ const MainFooter = styled.div`
     /* background-color : orange; */
 `
 
-const SubFooter = styled.div`
-    height : 200px;
-    width : 100%;
-    background-color : ${theme.white};
-    display : flex;
-    justify-content : center;
-    align-items : center;
-`
+// const SubFooter = styled.div`
+//     height : 200px;
+//     width : 100%;
+//     background-color : ${theme.white};
+//     display : flex;
+//     justify-content : center;
+//     align-items : center;
+// `
 
 const Content = styled.div`
     display : flex;
@@ -93,31 +86,31 @@ const Column = styled.div`
     };
 `
 
-const MWrapper = styled.div`
-    display : flex;
-    justify-content : center;
-    align-items : center;
-    width : 100%;
-    background-color : red;
-    min-height : 200px;
-    padding-bottom : 20px;
-    padding-top : 80px;
-    /* position : absolute; */
-    width : 100%;
-    height: 100%;
-    /* top : 100px; */
-    bottom : -40px;
-`
-const SWrapper = styled.div`
-    width : 80%;
-    height : 100%;
-    max-width : ${device.desktopL};
-    display : flex;
-    flex-direction : column;
-    flex-wrap : wrap;
-    justify-content : space-around;
-    align-items : center;
-`
+// const MWrapper = styled.div`
+//     display : flex;
+//     justify-content : center;
+//     align-items : center;
+//     width : 100%;
+//     background-color : red;
+//     min-height : 200px;
+//     padding-bottom : 20px;
+//     padding-top : 80px;
+//     /* position : absolute; */
+//     width : 100%;
+//     height: 100%;
+//     /* top : 100px; */
+//     bottom : -40px;
+// `
+// const SWrapper = styled.div`
+//     width : 80%;
+//     height : 100%;
+//     max-width : ${device.desktopL};
+//     display : flex;
+//     flex-direction : column;
+//     flex-wrap : wrap;
+//     justify-content : space-around;
+//     align-items : center;
+// `
 const WrapperContent = styled.div`
     position : relative;
 `
