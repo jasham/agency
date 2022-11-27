@@ -73,7 +73,7 @@ const Home = () => {
             <RespMob height={resHeight}>
                 <div style={{ marginBottom : 20}}>
                     <span onClick={toggle}>
-                        <h1 style={{ color:"white"}}>LEHELPSERVICES</h1>
+                        <h1 style={{ color:"white", lineHeight : "10px"}}>LEHELPSERVICES</h1>
                     </span>
                 </div>
                 <div style={{ paddingLeft : 60, marginBottom : 6}}>
@@ -112,19 +112,19 @@ const Home = () => {
                 <div style={{ paddingLeft : 60, marginBottom : 10}}>
                     <LabelIcon 
                         icon={<PhoneIcon />}
-                        text="+4917643650517"
+                        text="+91-971-739-9814"
                     />
                 </div>
                 <div style={{ paddingLeft : 60, marginBottom : 10}}>
                     <LabelIcon 
                         icon={<Mail />}
-                        text="info@name.com"
+                        text="info@lehelpservices.com"
                     />
                 </div>
                 <div style={{ paddingLeft : 60, marginBottom : 10}}>
                     <LabelIcon 
                         icon={<Pin />}
-                        text="Germany"
+                        text="India"
                     />
                 </div>
                 <div style={{ paddingLeft : 60, marginBottom : 10, display : "flex", flexDirection : "row", }}>
