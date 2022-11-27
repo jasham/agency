@@ -5,7 +5,7 @@ import CText from '../../components/text'
 import { fontFamily, fSize } from '../../utility/font'
 import theme from '../../utility/theme'
 import Button from '../../components/button'
-import laptop from '../../assets/images/people.png'
+import laptop from '../../assets/images/group.png'
 
 const MainWrapper = styled.div`
     display : flex;
