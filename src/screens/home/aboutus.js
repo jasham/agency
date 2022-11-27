@@ -73,7 +73,7 @@ const AboutUs = () => {
                     />
                     
                     <CText 
-                        label="FEDARIS "
+                        label="LEHELPSERVICES "
                         ffamily={fontFamily('semiB')}
                         fsize={fSize("35px")}
                         color={theme.maincolor}
