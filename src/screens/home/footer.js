@@ -222,14 +222,14 @@ const Footer = () => {
                             <div style={{ marginBottom : 6}}>
                                 <LabelIcon 
                                     icon={<PhoneIcon height="15px"/>}
-                                    text="+4917643650517"
+                                    text="+91-971-739-9814"
                                     fsize={fSize('12px')}
                                 />
                             </div>
                             <div style={{ marginBottom : 6}}>
                                 <LabelIcon 
                                     icon={<Mail height="13px" />}
-                                    text="info@name.com"
+                                    text="info@lehelpservices.com"
                                     fsize={fSize('12px')}
                                 />
                             </div>
@@ -237,7 +237,15 @@ const Footer = () => {
 
                             <LabelIcon 
                                 icon={<Pin />}
-                                text="Germany"
+                                text="India"
+                                fsize={fSize('12px')}
+                                />
+                            </div>
+                                       <div style={{ marginBottom : 6}}>
+
+                            <LabelIcon 
+                                icon={""}
+                                text="Founder & CEO, Md Ayub Ansari"
                                 fsize={fSize('12px')}
                                 />
                             </div>
