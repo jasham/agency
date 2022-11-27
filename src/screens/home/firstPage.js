@@ -91,7 +91,7 @@ const FirstPage = () => {
                     />
                     
                     <CText 
-                        label="Design & Development "
+                        label="Analytics, Design & Development "
                         ffamily={fontFamily('semiB')}
                         fsize={fSize("35px")}
                         color={theme.maincolor}
