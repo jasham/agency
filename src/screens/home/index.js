@@ -73,7 +73,7 @@ const Home = () => {
             <RespMob height={resHeight}>
                 <div style={{ marginBottom : 20}}>
                     <span onClick={toggle}>
-                        <Hamburger fill={theme.white} />
+                        <h1 style={{ backgroundColor:"white"}}>LEHELPSERVICES</h1>
                     </span>
 
                     <img src={Logo} alt="logo" style={{ marginLeft : 15}}/>
