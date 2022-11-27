@@ -73,10 +73,8 @@ const Home = () => {
             <RespMob height={resHeight}>
                 <div style={{ marginBottom : 20}}>
                     <span onClick={toggle}>
-                        <h1 style={{ backgroundColor:"white"}}>LEHELPSERVICES</h1>
+                        <h1 style={{ color:"white"}}>LEHELPSERVICES</h1>
                     </span>
-
-                    <img src={Logo} alt="logo" style={{ marginLeft : 15}}/>
                 </div>
                 <div style={{ paddingLeft : 60, marginBottom : 6}}>
                     <LinkButton 
