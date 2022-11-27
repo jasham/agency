@@ -41,15 +41,15 @@ const UpperHeader = () => {
             <LeftWrapper>
                 <LabelIcon 
                     icon={<PhoneIcon />}
-                    text="+4917643650517"
+                    text="+91-971-739-9814"
                 />
                 <LabelIcon 
                     icon={<Mail />}
-                    text="info@name.com"
+                    text="info@lehelpservices.com"
                 />
                 <LabelIcon 
                     icon={<Pin />}
-                    text="Germany"
+                    text="India"
                 />
             </LeftWrapper>
             <RightWrapper>
