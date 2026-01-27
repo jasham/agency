@@ -9,9 +9,9 @@ import Blogs from './blogs'
 import styled from 'styled-components'
 import { device } from '../../utility/layout'
 import theme from '../../utility/theme'
-import Logo from '../../assets/icons/ninj.svg'
+
 import Button from '../../components/button'
-import Hamburger from '../../assets/icons/hamburger'
+
 import LinkButton from '../../components/linkButton'
 import LabelIcon from '../../components/labelIcon'
 import Mail from '../../assets/icons/mail'
